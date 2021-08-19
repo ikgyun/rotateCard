@@ -17,7 +17,7 @@ const StyledList = styled.div`
 
 @media only screen and (min-width:768px) {
   
-    width: 85vw;
+    width: 75vw;
     height: auto;
     overflow: hidden;
     display: flex;

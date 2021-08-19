@@ -11,9 +11,9 @@ const StyledItem = styled.ul`
     
     
     @media only screen and (min-width:768px) {
-    width: 350px;
-    height: 300px;
-    margin: 10px;
+    width: 280px;
+    height: 280px;
+    /* margin: 10px; */
     padding: 0.625rem;
     border-radius: 1.25rem;
     overflow: hidden;
@@ -26,9 +26,9 @@ const StyledItem = styled.ul`
 
     &:hover{
     transition: 0.5s;
-    width: 350px;
-    height: 300px;
-    margin: 10px;
+    width: 280px;
+    height: 280px;
+    /* margin: 10px; */
     padding: 0.625rem;
     border-radius: 1.25rem;
     overflow: hidden;
