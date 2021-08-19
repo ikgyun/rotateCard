@@ -2,9 +2,13 @@ import styled from "styled-components";
 
 
 const StyledItem = styled.ul`
-    /* border-top: 1px solid #666;
+    border-top: 1px solid #666;
     margin-top: 20px;
-    */
+
+    & > .content{
+        display:none;
+    }
+    
     
     @media only screen and (min-width:768px) {
     width: 350px;

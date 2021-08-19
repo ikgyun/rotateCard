@@ -2,7 +2,7 @@ import RequestItem from "./RequestItem";
 import styled from "styled-components";
 
 const StyledList = styled.div`
-    width: 75vw;
+    /* width: 75vw;
     height: auto;
     overflow: hidden;
     display: flex;
@@ -12,11 +12,12 @@ const StyledList = styled.div`
     transform-origin: ${(props) => (props.rotate ==='true' ? "50vw 50vh;" : "70vw ")};
     transform:${(props) => (props.rotate==='true' ? "perspective(1000px) translate3d(0,0,0) rotate3d(1,0,0,30deg);" : "none")};
 
-    
+     */
 
 
 @media only screen and (min-width:768px) {
-    width: 75vw;
+  
+    width: 85vw;
     height: auto;
     overflow: hidden;
     display: flex;
@@ -25,7 +26,7 @@ const StyledList = styled.div`
     margin: 0 auto;
     transform-origin: ${(props) => (props.rotate ==='true' ? "50vw 50vh;" : "70vw ")};
     transform:${(props) => (props.rotate==='true' ? "perspective(1000px) translate3d(0,0,0) rotate3d(1,0,0,30deg);" : "none")};
-     
+
 }
 `
 
@@ -51,9 +52,7 @@ const Item = list.map((v, i) => {
   // if (loadding) return <li>로딩중입니다^^</li>;
   // if (error) return <li>에러!!</li>;
   return <StyledList rotate={props.rotate.toString()}>
-    <div className="rList">
     {Item}
-    </div>
     </StyledList>;
 };
 

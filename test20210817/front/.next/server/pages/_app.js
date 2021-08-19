@@ -24,7 +24,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _store_reducer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../store/reducer */ "./store/reducer.jsx");
 
 
-var _jsxFileName = "C:\\Users\\KGA_03\\Documents\\rotatecards\\test20210817\\front\\pages\\_app.jsx";
+var _jsxFileName = "C:\\Users\\KGA_02\\Documents\\\uC775\uADE0\\team\\rotateCard\\test20210817\\front\\pages\\_app.jsx";
 
 
 

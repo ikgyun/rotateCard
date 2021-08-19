@@ -19,31 +19,33 @@ const StyledContainer = styled.div`
     overflow: hidden;
     margin: 0 auto;
 
-    &>h2{
+    &>.top>h2{
         width: 70vw;
         text-align: center;
         margin:0 auto;
-        font-size: 1.5rem;
+        font-size: 1.0rem;
         margin-top:20px;
         margin-bottom:10px;
     }
-    & > .writeBtn {
+    & > .top>.writeBtn {
+        float:right
         width: 80vw;
         height: 70px;
         margin: 0 auto;
         margin-top: 20px;
         text-align: right;
-    }
+    } 
 
     @media only screen and (min-width:768px) {
-    &>h2{
+
+    &>.top>h2{
         width: 70vw;
         text-align: center;
         margin:0 auto;
         font-size: 4.5rem;
     }
 
-    & > .writeBtn {
+    & > .top>.writeBtn {
         width: 73vw;
         height: 70px;
         margin: 0 auto;
@@ -199,12 +201,14 @@ const index = () => {
     return (
         <StyledWrap>
             <StyledContainer>
+                <div className="top">
                 <h2>개발자에게 '요구'하세요</h2>
                 {rotate && <RequestForm rotate={rotate} handleRotate={handleRotate} handleCreate={handleCreate} />}
 
                 {!rotate && <div className='writeBtn' onClick={()=>{handleRotate(true)}}>
                     <BsPencilSquare size={48} />
                 </div>}
+                </div>
             
                 <RequestList
                     list={list}
